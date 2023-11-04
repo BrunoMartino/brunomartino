@@ -6,43 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../dist/output.css">
   <link rel="shortcut icon" href="/" type="image/x-icon">
-  <script src="../dist/main.js"></script>
   <title>Bruno Martins - Fullstack Dev</title>
 </head>
 
 <body>
 
-  <header class="bg-black border-b-2 border-b-gray-900">
-    <div class="container flex justify-between items-center">
-      <h1 class="text-2xl text-sky-500 font-semibold uppercase py-3 pl-3">Bruno Martins</h1>
-      <div class="w-5"><img src="../src/imgs/home/bars.svg" alt=""></div>
-      <nav>
-        <ul class="flex gap-2 pr-5">
-          <li><a class="text-white text-sm font-semibold" href="#about">Sobre</a></li>
-          <li><a class="text-white text-sm font-semibold" href="#works">Trabalhos</a></li>
-          <li><a class="text-white text-sm font-semibold" href="#stacks">Tecnologias</a></li>
-          <li><a class="bg-sky-500 py-2 px-3 rounded-full font-mono font-bold text-sky-950 text-sm uppercase" href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+  <header class="bg-black border-b-2 border-b-gray-900 relative">
+    <div class="container flex justify-between items-center   px-5">
+      <h1 class="text-2xl text-sky-500 font-semibold uppercase py-3">Bruno Martins</h1>
+      <div class="mobile-btn w-5"><img src="../src/imgs/home/bars.svg" alt=""></div>
+      <a class="bg-sky-500 py-2 px-3 rounded-full font-mono font-bold text-sky-950 text-sm uppercase" href="#contact">Contato</a>
+    </div>
+    <nav class="dropdown-list hidden absolute bg-white py-2 top-16 w-full z-20">
+      <ul class="items-center h-full">
+        <li class="border-b-2 border-b-gray-200 py-3"><a class="w-full pl-3 pr-9 block text-black text-center text-xl font-semibold  bg-white " href="#about">Sobre</a></li>
+        <li class="border-b-2 border-b-gray-200 py-3"><a class="w-full pl-3 pr-9 block text-black text-center text-xl font-semibold  bg-white " href="#works">Trabalhos</a></li>
+        <li class=" py-3"><a class="w-full pl-3 pr-9 block text-black text-center text-xl font-semibold bg-white" href="#stacks">Tecnologias</a></li>
+      </ul>
+    </nav>
   </header>
 
   </div>
-  <section class="w-full bg-[url('../src/imgs/home/page1.webp')] bg-cover bg-center">
-    <div class="mx-auto py-6 px-8 container justify-center items-center">
-      <h1 class="text-white text-center text-3xl">Olá! eu sou o <span class="text-sky-500 font-semibold">Bruno</span>,</h1>
-      <h1 class="text-white text-center text-3xl hidden">Eu sou um <span class="text-sky-500 font-semibold">Desenvolvedor Fullstack</span>,</h1>
-      <h1 class="text-white text-center text-3xl hidden">Eu torno suas ideias em <span class="text-sky-500 font-semibold">Tecnologia</span>.</h1>
+  <section class="w-full bg-[url('../src/imgs/home/page1.webp')] bg-cover bg-center h-screen flex flex-col justify-center items-center relative z-10">
+    <div id="parallax-bg" class="absolute z-0">
+      <div class="mx-auto container py-3">
+        <h1 class="text-white text-center text-3xl">Olá! eu sou o <span class="text-sky-500 font-semibold">Bruno</span>,</h1>
+        <h1 class="text-white text-center text-3xl ">Eu sou um <span class="text-sky-500 font-semibold">Desenvolvedor Fullstack</span>,</h1>
+        <h1 class="text-white text-center text-3xl ">Eu torno suas ideias em <span class="text-sky-500 font-semibold">Tecnologia</span>.</h1>
+      </div>
+      <p class="px-8 py-5 text-white text-xl text-center font-semibold">Se você quer construir um site ou aplicação, me chame no <a class="text-sky-500 font-semibold underline" href="wa.me/5531982444572">Whatsapp</a></p>
+      <div class="mx-auto container mt-8">
+        <ul class="wrapper flex items-center justify-center">
+          <li class="flex-shrink-0 w-full "><img src="../src/imgs/home/code.webp" alt="foto de notebook com código escrito"></li>
+          <li class="flex-shrink-0 w-full hidden "><img src="../src/imgs/home/mobway.webp" alt="foto de notebook e celular com site na tela"></li>
+          <li class="flex-shrink-0 w-full hidden "><img src="../src/imgs/home/meufoot.webp" alt="foto de notebook e celular com site na tela"></li>
+        </ul>
+      </div>
     </div>
-    <p class="px-8 text-white text-xl text-center font-semibold">Se você quer construir um site ou aplicação, me chame no <a class="text-sky-500 font-semibold underline" href="wa.me/5531982444572">Whatsapp</a></p>
-    <div class="mx-auto container pt-8 pb-16">
-      <ul class="wrapper flex items-center justify-center">
-        <li class="flex-shrink-0 w-96 "><img src="../src/imgs/home/code.webp" alt="foto de notebook com código escrito"></li>
-        <li class="flex-shrink-0 w-96 hidden "><img src="../src/imgs/home/mobway.webp" alt="foto de notebook e celular com site na tela"></li>
-        <li class="flex-shrink-0 w-96 hidden "><img src="../src/imgs/home/meufoot.webp" alt="foto de notebook e celular com site na tela"></li>
-      </ul>
-    </div>
+
   </section>
-  <section>
+  <section class="relative z-10">
     <h2>Sobre meu trabalho</h2>
     <ul>
       <li>
@@ -70,7 +73,7 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="relative z-10">
     <h2>Meus Trabalhos recentes</h2>
     <div>
       <ul>
@@ -80,7 +83,7 @@
       </ul>
     </div>
   </section>
-  <section>
+  <section class="relative z-10">
     <h2>Tecnologias que mais uso</h2>
     <li><img src="../src/imgs/skills/html-5.svg" alt="">
       <p>HTML 5</p>
@@ -110,18 +113,19 @@
       <p>Nome da Tech</p>
     </li>
   </section>
-  <section>
+  <section class="relative z-10">
     <h2>Agende sua reunião</h2>
     insira aqui o iframe do calendly
 
     <h3>Ou me chame no <a href="">Whatsapp</a> para conversamos!</h3>
   </section>
-  <footer class="bg-black">
+  <footer class="bg-black relative z-10">
     <p>Me encontre nas redes</p>
     <a href=""><img src="../src/imgs/footer/github.svg" alt="icone do github">Github</a>
     <a href=""><img src="../src/imgs/footer/linkedin.svg" alt="icone do linkedin">Linkedin</a>
     <p>Bruno Martino ©️ 2023</p>
   </footer>
+  <script typo="modules" src="../dist/main.js"></script>
 </body>
 
 </html>
