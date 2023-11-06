@@ -16,10 +16,11 @@ export class Slide {
 
   moveSlide(distX) {
     this.dist.movePosition = distX;
-    this.slide.style.transform = `translate3d(${distX}px, 0, 0)`;
+    this.slide.style.transform = `translate3d(${distX}px, 0, 0`;
   }
 
   updatePosition(clientX) {
+    this.dist.startX = 0;
     this.dist.movement = (this.dist.startX - clientX) * 1.6;
     return this.dist.finalPosition - this.dist.movement;
   }
@@ -161,10 +162,10 @@ export class Slide {
   }
 
   addResizeEvent(index) {
-    let counter = 1;
-    let size = this.slideArray[index].clientWidth;
+    let counter = 0;
+    let size = this.slideArray[index].element.offsetWidth;
     window.addEventListener("resize", () => {
-      this.slide.style.transform = `translateX(${-size * counter}px)`;
+      this.moveSlide(-size * counter);
     });
   }
 
