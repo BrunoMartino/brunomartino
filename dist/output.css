@@ -1,3 +1,99 @@
+@font-face {
+  font-family: Montserrat;
+
+  src: url("../src/typography/Montserrat/static/Montserrat-Regular.ttf")
+    format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+
+  src: url("../src/typography/Montserrat/static/Montserrat-Medium.ttf")
+    format("truetype");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+
+  src: url("../src/typography/Montserrat/static/Montserrat-SemiBold.ttf")
+    format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+
+  src: url("../src/typography/Montserrat/static/Montserrat-Bold.ttf")
+    format("truetype");
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+
+  src: url("../src/typography/Roboto/Roboto-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+
+  src: url("../src/typography/Roboto/Roboto-Bold.ttf") format("truetype");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+
+  src: url("../typography/Roboto/Roboto-Bold.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+.font-1 {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.font-2 {
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
@@ -865,6 +961,11 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/src\/imgs\/home\/page1\.webp\'\)\] {
   background-image: url('../src/imgs/home/page1.webp');
 }
@@ -1007,12 +1108,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -1071,6 +1181,11 @@ video {
 .text-yellow-950 {
   --tw-text-opacity: 1;
   color: rgb(66 32 6 / var(--tw-text-opacity));
+}
+
+.text-green-950 {
+  --tw-text-opacity: 1;
+  color: rgb(5 46 22 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1211,24 +1326,12 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-72 {
-    right: 18rem;
+  .lg\:right-\[360px\] {
+    right: 360px;
   }
 
   .lg\:top-0 {
     top: 0px;
-  }
-
-  .lg\:right-80 {
-    right: 20rem;
-  }
-
-  .lg\:right-\[400px\] {
-    right: 400px;
-  }
-
-  .lg\:right-\[360px\] {
-    right: 360px;
   }
 
   .lg\:mb-6 {
@@ -1263,22 +1366,6 @@ ul {
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .lg\:pl-20 {
-    padding-left: 5rem;
-  }
-
-  .lg\:pr-32 {
-    padding-right: 8rem;
-  }
-
-  .lg\:pr-16 {
-    padding-right: 4rem;
-  }
-
-  .lg\:pr-8 {
-    padding-right: 2rem;
   }
 
   .lg\:text-center {
