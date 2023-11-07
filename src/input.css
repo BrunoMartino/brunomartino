@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.blink-bar {
+.titles h1::after {
+  content: "|";
   opacity: 1;
   margin-left: 4px;
-  display: inline;
+  display: inline-block;
   animation: blink 0.7s infinite;
 }
 
@@ -18,14 +19,12 @@
     opacity: 0;
   }
 }
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.slide-wrapper::-webkit-scrollbar {
-  display: none;
+.prev-btn img,
+.next-btn img {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.slide-wrapper {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.prev-btn:hover img,
+.next-btn:hover img {
+  opacity: 1;
 }

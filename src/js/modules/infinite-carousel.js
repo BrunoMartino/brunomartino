@@ -44,6 +44,6 @@ export default class InfiniteCarousel {
   }
 
   init() {
-    setInterval(this.moveSlideRight, 3000);
+    this.createEvents();
   }
 }

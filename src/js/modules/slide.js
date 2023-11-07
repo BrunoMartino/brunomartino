@@ -2,7 +2,7 @@ export class Slide {
   constructor(slide, wrapper) {
     this.slide = document.querySelector(slide);
     this.wrapper = document.querySelector(wrapper);
-    this.dist = { finalPosition: 0, startX: 0, movement: 0 };
+    this.dist = { finalPosition: 0, startX: 0, movement: 0, movePosition: 0 };
     this.activeClass = "ativo";
     this.changeEvent = new Event("changeEvent");
     this.mousedown;
@@ -20,7 +20,6 @@ export class Slide {
   }
 
   updatePosition(clientX) {
-    this.dist.startX = 0;
     this.dist.movement = (this.dist.startX - clientX) * 1.6;
     return this.dist.finalPosition - this.dist.movement;
   }
@@ -162,10 +161,10 @@ export class Slide {
   }
 
   addResizeEvent(index) {
-    let counter = 0;
     let size = this.slideArray[index].element.offsetWidth;
     window.addEventListener("resize", () => {
-      this.moveSlide(-size * counter);
+      this.distX = -size * this.index.active;
+      this.moveSlide(this.distX);
     });
   }
 

@@ -5,7 +5,6 @@ export default class Typewriter {
 
   phraseWriter(element) {
     const textArray = element.innerHTML.split("");
-    console.log(element.innerHTML);
     element.innerHTML = "";
     textArray.forEach((letter, i) => {
       setTimeout(() => {
