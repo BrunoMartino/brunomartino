@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+ul {
+  padding-inline-start: 0;
+  margin: 0;
+}
+
 .titles h1::after {
   content: "|";
   opacity: 1;

@@ -12,8 +12,7 @@ slideHome.init();
 const slideWorks = new InfiniteCarousel(
   ".prev-btn",
   ".next-btn",
-  ".slide-work li",
-  ".work-wrapper"
+  ".slide-work li"
 );
 slideWorks.init();
 

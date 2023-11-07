@@ -122,7 +122,7 @@ export class Slide {
   carouselSlide() {
     setInterval(() => {
       this.activeNextSlide();
-    }, 5000);
+    }, 3600);
   }
   // slides config
 
@@ -178,6 +178,7 @@ export class Slide {
   // init class slide on script file
 
   init() {
+    this.moveSlide(0);
     this.bindEvents();
     this.transitionSlide(true);
     this.addSlideEvents();
