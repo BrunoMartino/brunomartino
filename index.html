@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../dist/output.css">
-  <link rel="preload" fetchpriority="high" as="image" href="../src/imgs/home/page1.webp" type="image/webp">
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="preload" fetchpriority="high" as="image" href="./src/imgs/home/page1.webp" type="image/webp">
   <link rel="shortcut icon" href="/" type="image/x-icon">
   <title>Bruno Martins - Fullstack Dev</title>
 </head>
@@ -15,7 +15,7 @@
   <header class="bg-black border-b-2 border-b-gray-900 relative">
     <div class="container flex justify-between items-center px-5">
       <h1 class="font-2 text-2xl text-sky-500 font-semibold uppercase py-3"><a href="/">Bruno Martins</a></h1>
-      <div class="mobile-btn w-5 cursor-pointer lg:hidden"><img src="../src/imgs/home/bars.svg" alt="menu mobile" width="448" height="512"></div>
+      <div class="mobile-btn w-5 cursor-pointer lg:hidden"><img src="./src/imgs/home/bars.svg" alt="menu mobile" width="448" height="512"></div>
       <a class="bg-sky-500 py-2 px-3 rounded-full font-mono font-bold text-sky-950 text-sm uppercase" href="#contacts">Contato</a>
     </div>
     <nav class="dropdown-list hidden absolute bg-white py-2 top-16 w-full z-20 lg:flex lg:top-0 lg:w-max lg:bg-transparent lg:right-[360px] lg:py-0">
@@ -28,7 +28,7 @@
   </header>
 
   </div>
-  <section class="w-full bg-[url('../src/imgs/home/page1.webp')] bg-cover bg-center h-screen flex flex-col justify-center items-center relative z-10">
+  <section class="w-full bg-[url('./src/imgs/home/page1.webp')] bg-cover bg-center h-screen flex flex-col justify-center items-center relative z-10">
     <div id="parallax-bg" class="absolute z-0">
       <div class="titles mx-auto container py-3 flex justify-center">
         <h1 class="phrase text-white text-center font-2 text-3xl  font-semibold after:conten">Olá! eu sou o Bruno,</h1>
@@ -39,9 +39,9 @@
       <div class="flex justify-center items-center">
         <div class="home-wrapper max-w-lg mt-8 overflow-hidden cursor-pointer">
           <ul class="slide-home flex gap-20">
-            <li class="flex-shrink-0 max-w-lg"><img src="../src/imgs/home/code.webp" alt="código em um notebook" width="1280" height="732"></li>
-            <li class="flex-shrink-0 max-w-lg"><img src="../src/imgs/home/mobway.webp" alt="home da MeuFoot Store em um notebook" width="1280" height="897"></li>
-            <li class="flex-shrink-0 max-w-lg"><img src="../src/imgs/home/meufoot.webp" alt="home da Mobway Store em um notebook" width="1280" height="907"></li>
+            <li class="flex-shrink-0 max-w-lg"><img src="./src/imgs/home/code.webp" alt="código em um notebook" width="1280" height="732"></li>
+            <li class="flex-shrink-0 max-w-lg"><img src="./src/imgs/home/mobway.webp" alt="home da MeuFoot Store em um notebook" width="1280" height="897"></li>
+            <li class="flex-shrink-0 max-w-lg"><img src="./src/imgs/home/meufoot.webp" alt="home da Mobway Store em um notebook" width="1280" height="907"></li>
           </ul>
         </div>
       </div>
@@ -61,7 +61,7 @@
             </p>
             <p class="lg:text-xl font-2 text-sky-700 capitalize font-semibold text-md">Todos meus sites (e os seus) são feitos em código.</p>
           </div>
-          <img class="max-w-sm h-full rounded border-2 border-gray-300" src="../src/imgs/about/pagespeed.webp" alt="performance no lighthouse" width="3172" height="1450">
+          <img class="max-w-sm h-full rounded border-2 border-gray-300" src="./src/imgs/about/pagespeed.webp" alt="performance no lighthouse" width="3172" height="1450">
         </div>
       </li>
       <li class="rounded-lg shadow-xl px-4 py-4 gap-2 mb-8 bg-white">
@@ -73,7 +73,7 @@
             <p class="lg:text-lg text-md font-1 mb-2">Não pagar R$2400,00 por ano em um chatbot?</p>
             <a href="#contacts" class="text-sky-700 font-2 capitalize font-semibold lg:text-xl text-md underline">Talvez devesse agendar logo uma reunião comigo</a>
           </div>
-          <img class="max-w-sm h-full rounded border-2 border-gray-300" src="../src/imgs/about/wppBot.webp" alt="bot de whatsapp" width="3840" height="1818">
+          <img class="max-w-sm h-full rounded border-2 border-gray-300" src="./src/imgs/about/wppBot.webp" alt="bot de whatsapp" width="3840" height="1818">
         </div>
       </li>
       <li class="rounded-lg shadow-xl px-4 py-4 gap-2 mb-8 bg-white">
@@ -83,7 +83,7 @@
             <p class="lg:text-lg text-md mb-2 font-1 max-w-prose">Deixo tudo configurado nos seu site para facilitar ser indexado por qualquer buscador</p>
             <p class="lg:text-xl text-sky-700 capitalize font-2 font-semibold text-md max-w-prose">Seu gerente de tráfego vai te agradecer por ter tudo isso pronto</p>
           </div>
-          <img class="max-w-sm h-full rounded border-2 border-gray-300" src="../src/imgs/about/GoogleAnalytics.webp" alt="foto do Analitycs" width="1354" height="768">
+          <img class="max-w-sm h-full rounded border-2 border-gray-300" src="./src/imgs/about/GoogleAnalytics.webp" alt="foto do Analitycs" width="1354" height="768">
         </div>
       </li>
     </ul>
@@ -93,12 +93,12 @@
       <h2 class="mt-20 text-center  font-2 text-2xl font-bold uppercase inline-block text-white after:mt-2 after:content-[''] after:block w-auto after:h-1 after:bg-sky-400">Trabalhos Recentes</h2>
     </div>
     <div class="relative">
-      <button class="prev-btn px-4 hover:block absolute bg-gradient-to-r from-black to-{#rgba(0, 0, 0, 0.6)} h-full w-20 left-0"><img class="w-24 h-16 px-2 py-1 rounded-[50%] bg-sky-500 lg:hidden" src="../src/imgs/components/arrow_back.svg" alt="botão voltar" width="24" height="24"></button>
-      <button class="next-btn px-4 hover:block absolute bg-gradient-to-l from-black to-{#rgba(0, 0, 0, 0.6)} h-full w-20 right-0"><img class="w-24 h-16 px-2 py-1 rounded-[50%] bg-sky-500 lg:hidden" src="../src/imgs/components/arrow_forward.svg" alt="botão avançar" width="24" height="24"></button>
+      <button class="prev-btn px-4 hover:block absolute bg-gradient-to-r from-black to-{#rgba(0, 0, 0, 0.6)} h-full w-20 left-0"><img class="w-24 h-16 px-2 py-1 rounded-[50%] bg-sky-500 lg:hidden" src="./src/imgs/components/arrow_back.svg" alt="botão voltar" width="24" height="24"></button>
+      <button class="next-btn px-4 hover:block absolute bg-gradient-to-l from-black to-{#rgba(0, 0, 0, 0.6)} h-full w-20 right-0"><img class="w-24 h-16 px-2 py-1 rounded-[50%] bg-sky-500 lg:hidden" src="./src/imgs/components/arrow_forward.svg" alt="botão avançar" width="24" height="24"></button>
       <nav class="work-wrapper px-8 pb-20 overflow-hidden">
         <ul class="slide-work px-10 flex items-center gap-10 lg:justify-around">
           <li class="flex-shrink-0 max-w-sm border-4 border-sky-500 rounded-lg bg-gray-900"><a href="https://meufoot.com.br/">
-              <div><img class="border-b-4 border-b-sky-400" src="../src/imgs/work/meufoot_home.webp" alt="meu foot" width="3800" height="2204"></div>
+              <div><img class="border-b-4 border-b-sky-400" src="./src/imgs/work/meufoot_home.webp" alt="meu foot" width="3800" height="2204"></div>
               <div>
                 <div class="flex justify-center">
                   <h3 class="mt-5 text-center font-2 text-2xl font-bold uppercase inline-block text-white after:mt-2 after:content-[''] after:block w-auto after:h-1 after:bg-sky-400">Meu Foot Store</h3>
@@ -115,7 +115,7 @@
             </a>
           </li>
           <li class="flex-shrink-0 max-w-sm border-4 border-sky-500 rounded-lg bg-gray-900"><a href="https://mobwaystore.com/">
-              <div><img class="border-b-4 border-b-sky-400" src="../src/imgs/work/mobway_home.webp" alt="meu foot" width="3840" height="2188"></div>
+              <div><img class="border-b-4 border-b-sky-400" src="./src/imgs/work/mobway_home.webp" alt="meu foot" width="3840" height="2188"></div>
               <div>
                 <div class="flex justify-center">
                   <h3 class="mt-5 text-center text-2xl font-2 font-bold uppercase inline-block text-white after:mt-2 after:content-[''] after:block w-auto after:h-1 after:bg-sky-400">Mobway Store</h3>
@@ -132,7 +132,7 @@
             </a>
           </li>
           <li class="flex-shrink-0 max-w-sm border-4 border-sky-500 rounded-lg bg-gray-900"><a href="https://github.com/BrunoMartino/Python_Whatsapp_bot">
-              <div><img class="border-b-4 border-b-sky-400" src="../src/imgs/work/whatsapp_bot.webp" alt="meu foot" width="3800" height="2200"></div>
+              <div><img class="border-b-4 border-b-sky-400" src="./src/imgs/work/whatsapp_bot.webp" alt="meu foot" width="3800" height="2200"></div>
               <div>
                 <div class="flex justify-center">
                   <h3 class="mt-5 text-center font-2 text-2xl font-bold uppercase inline-block text-white after:mt-2 after:content-[''] after:block w-auto after:h-1 after:bg-sky-400">Marvelous Whatsapp Bot</h3>
@@ -157,31 +157,31 @@
     </div>
     <div class="wrapper-stack mx-auto mt-8 overflow-hidden cursor-pointer">
       <ul class="slide-stack flex gap-20">
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md "><img class="w-48 h-full" src="../src/imgs/skills/html-5.svg" alt="" width="48" height="48">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md "><img class="w-48 h-full" src="./src/imgs/skills/html-5.svg" alt="" width="48" height="48">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">HTML 5</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/css3.svg" alt="" width="48" height="48">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/css3.svg" alt="" width="48" height="48">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">CSS 3</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/js.svg" alt="" width="60" height="60">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/js.svg" alt="" width="60" height="60">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">Javascript ES6</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/vue.svg" alt="" width="800" height="800">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/vue.svg" alt="" width="800" height="800">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">Vue.js</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/tailwindcss-icon.svg" alt="" width="800" height="800">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/tailwindcss-icon.svg" alt="" width="800" height="800">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">Tailwind CSS</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/sass.svg" alt="" width="2500" height="1875">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/sass.svg" alt="" width="2500" height="1875">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">SASS</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/php.svg" alt="" width="800" height="800">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/php.svg" alt="" width="800" height="800">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">PHP</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/node-js.svg" alt="" width="800" height="800">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/node-js.svg" alt="" width="800" height="800">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">Node.js</p>
         </li>
-        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="../src/imgs/skills/python.svg" alt="" width="800" height="800">
+        <li class="flex-shrink-0 flex flex-col items-center py-4 px-8 shadow-lg bg-white rounded-md"><img class="w-48 h-full" src="./src/imgs/skills/python.svg" alt="" width="800" height="800">
           <p class="text-3xl font-1 text-center font-semibold uppercase py-4">Python</p>
         </li>
       </ul>
@@ -197,13 +197,13 @@
   <footer class="bg-black pt-16 pb-4">
     <p class="text-white text-2xl text-center font-2 font-semibold mb-8 capitalize">Me encontre nas redes-sociais:</p>
     <div class="flex gap-4 justify-center items-center">
-      <a href=" https://github.com/BrunoMartino"><img class="w-12 h-12" src="../src/imgs/footer/github.svg" alt="icone do github" width="512" height="512">Github</a>
-      <a href="https://www.linkedin.com/in/bruno-g-martins/"><img class="w-12 h-12" src="../src/imgs/footer/linkedin.svg" alt="icone do linkedin" width="448" height="512">Linkedin</a>
+      <a href=" https://github.com/BrunoMartino"><img class="w-12 h-12" src="./src/imgs/footer/github.svg" alt="icone do github" width="512" height="512">Github</a>
+      <a href="https://www.linkedin.com/in/bruno-g-martins/"><img class="w-12 h-12" src="./src/imgs/footer/linkedin.svg" alt="icone do linkedin" width="448" height="512">Linkedin</a>
     </div>
 
     <p class="text-gray-400 font-2 text-center mt-2 capitalize before:content-[''] before:block before:w-full before:h-1 before:bg-gray-900 before:mb-4">Bruno Martins ©️ 2023</p>
   </footer>
-  <script defer src="../dist/main.js"></script>
+  <script defer src="./dist/main.js"></script>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 
