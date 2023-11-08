@@ -841,6 +841,10 @@ video {
   gap: 1rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1228,6 +1232,21 @@ ul {
 .prev-btn:hover img,
 .next-btn:hover img {
   opacity: 1;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.work-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.work-wrapper {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .before\:mb-4::before {
