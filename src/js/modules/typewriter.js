@@ -15,5 +15,6 @@ export default class Typewriter {
 
   init() {
     this.phraseWriter(this.text);
+    return this;
   }
 }

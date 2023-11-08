@@ -45,5 +45,6 @@ export default class InfiniteCarousel {
 
   init() {
     this.createEvents();
+    return this;
   }
 }
