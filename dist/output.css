@@ -680,18 +680,6 @@ video {
   right: 0px;
 }
 
-.top-12 {
-  top: 3rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -1008,14 +996,14 @@ video {
   background-position: center;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3 {
@@ -1066,6 +1054,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-10 {
@@ -1380,32 +1373,12 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-\[360px\] {
-    right: 360px;
-  }
-
-  .lg\:top-6 {
-    top: 1.5rem;
-  }
-
-  .lg\:top-0 {
-    top: 0px;
-  }
-
-  .lg\:top-4 {
-    top: 1rem;
-  }
-
   .lg\:top-5 {
     top: 1.25rem;
   }
 
   .lg\:mb-6 {
     margin-bottom: 1.5rem;
-  }
-
-  .lg\:mr-40 {
-    margin-right: 10rem;
   }
 
   .lg\:flex {
@@ -1416,17 +1389,16 @@ ul {
     display: none;
   }
 
-  .lg\:w-max {
-    width: -moz-max-content;
-    width: max-content;
-  }
-
   .lg\:w-56 {
     width: 14rem;
   }
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-end {
@@ -1448,10 +1420,6 @@ ul {
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .lg\:pr-40 {
-    padding-right: 10rem;
   }
 
   .lg\:pr-24 {

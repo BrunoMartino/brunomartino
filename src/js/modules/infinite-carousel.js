@@ -18,7 +18,7 @@ export default class InfiniteCarousel {
     });
     this.slides[this.currentItem].scrollIntoView({
       behavior: "smooth",
-      inline: "start",
+      inline: "center",
       block: "nearest",
     });
   }
